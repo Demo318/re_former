@@ -1,5 +1,8 @@
 <h1>new user page</h1>
 
+<%= render partial: "user", locals: {user: @user} %>
+
+<!--
 <%= form_with model: @user do |form| %>
   <%= form.label :username, "Username:" %>
   <%= form.text_field :username %><br><br>
@@ -9,14 +12,7 @@
   <%= form.password_field :password %><br><br>
   <%= form.submit "Submit" %>
 <% end %>
-
-
-
-
-
-
-
-
+-->
 
 
 <!--
@@ -34,8 +30,6 @@
 <% end %>
 
 -->
-
-
 
 
 <!-- Old HTML Form
