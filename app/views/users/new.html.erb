@@ -1,5 +1,25 @@
 <h1>new user page</h1>
 
+<%= form_with model: @user do |form| %>
+  <%= form.label :username, "Username:" %>
+  <%= form.text_field :username %><br><br>
+  <%= form.label :email, "Email:"%>
+  <%= form.email_field :email %><br><br>
+  <%= form.label :password, "Password:" %>
+  <%= form.password_field :password %><br><br>
+  <%= form.submit "Submit" %>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+<!--
 <%= form_tag("/users", method: "post") do %>
   <%= label_tag("user[username]", "Username:") %>
   <%= text_field_tag("user[username]") %><br><br>
@@ -12,6 +32,8 @@
 
   <%= submit_tag("Submit") %>
 <% end %>
+
+-->
 
 
 
